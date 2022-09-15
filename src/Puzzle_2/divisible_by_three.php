@@ -24,24 +24,22 @@ $max = 1000;
 $allElements = divisible_by_three($min, $max);
 
 //выводим первый элемент массива
-function first_el_array ($allElements)
+function first_el_array($allElements)
 {
-    foreach ($allElements as $lastElement)
-    {
+    foreach ($allElements as $lastElement) {
         return array_shift($lastElement);
     }
 }
 
 //выводим последний элемент массива
-function last_el_array ($allElements)
+function last_el_array($allElements)
 {
-    foreach ($allElements as $endElement)
-    {
+    foreach ($allElements as $endElement) {
         return end($endElement);
     }
 }
 
 assert(divisible_by_three($min, $max));
-assert(first_el_array($allElements) % 3 ==0);
+assert(first_el_array($allElements) % 3 == 0);
 assert(last_el_array($allElements) % 3 === 0);
 
