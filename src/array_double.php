@@ -10,3 +10,4 @@ function array_double($array) : array
 
 $array = [1,2,3];
 assert(array_double($array));
+
