@@ -5,7 +5,9 @@
 
 function array_double($array) : array
 {
-    return array_map(fn($array): int => $array * 2, $array, range(1, count($array) -1));
+    return [
+        array_map(fn($array): int => $array * 2, $array, range(1, count($array) -1))
+    ];
 }
 
 $array = [1,2,3];

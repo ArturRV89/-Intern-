@@ -19,21 +19,29 @@ function divisible_by_three(int $max, int $min): array
 $min = 1;
 $max = 1000;
 
-assert(divisible_by_three($min, $max));
-
 ////////////////////TESTS///////////////////////////////
 
 $allElements = divisible_by_three($min, $max);
 
-function three_devided_range ($allElements)
+//выводим первый элемент массива
+function first_el_array ($allElements)
 {
     foreach ($allElements as $lastElement)
     {
-        return reset($lastElement);
+        return array_shift($lastElement);
     }
 }
 
-assert(three_devided_range($allElements) % 3 ==0);
+//выводим последний элемент массива
+function last_el_array ($allElements)
+{
+    foreach ($allElements as $endElement)
+    {
+        return end($endElement);
+    }
+}
 
-//assert($lastElement % 3 === 0);
-//array_rand
+assert(divisible_by_three($min, $max));
+assert(first_el_array($allElements) % 3 ==0);
+assert(last_el_array($allElements) % 3 === 0);
+
