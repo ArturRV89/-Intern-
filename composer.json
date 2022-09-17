@@ -1,0 +1,12 @@
+{
+    "name": "project/app",
+    "autoload": {
+        "psr-4": {
+            "Classes\\": "classes/"
+        }
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^6.0",
+        "friendsofphp/php-cs-fixer": "^3.11"
+    }
+}
