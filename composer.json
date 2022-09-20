@@ -2,7 +2,9 @@
     "name": "project/app",
     "autoload": {
         "psr-4": {
-            "Classes\\": "classes/"
+            "Classes\\": "classes/",
+            "" : "src/",
+            "My\\Abstract\\" : "My"
         }
     },
     "require-dev": {

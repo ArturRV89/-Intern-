@@ -47,6 +47,10 @@ class ComposerStaticInit1325ede364923c305052731ce37643a0
             'Psr\\Cache\\' => 10,
             'PhpCsFixer\\' => 11,
         ),
+        'M' => 
+        array (
+            'My\\Abstract\\' => 12,
+        ),
         'D' => 
         array (
             'Doctrine\\Common\\Lexer\\' => 22,
@@ -150,6 +154,10 @@ class ComposerStaticInit1325ede364923c305052731ce37643a0
         array (
             0 => __DIR__ . '/..' . '/friendsofphp/php-cs-fixer/src',
         ),
+        'My\\Abstract\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/My',
+        ),
         'Doctrine\\Common\\Lexer\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/lexer/lib/Doctrine/Common/Lexer',
@@ -174,6 +182,10 @@ class ComposerStaticInit1325ede364923c305052731ce37643a0
         array (
             0 => __DIR__ . '/../..' . '/classes',
         ),
+    );
+
+    public static $fallbackDirsPsr4 = array (
+        0 => __DIR__ . '/../..' . '/src',
     );
 
     public static $classMap = array (
@@ -208,6 +220,7 @@ class ComposerStaticInit1325ede364923c305052731ce37643a0
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit1325ede364923c305052731ce37643a0::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit1325ede364923c305052731ce37643a0::$prefixDirsPsr4;
+            $loader->fallbackDirsPsr4 = ComposerStaticInit1325ede364923c305052731ce37643a0::$fallbackDirsPsr4;
             $loader->classMap = ComposerStaticInit1325ede364923c305052731ce37643a0::$classMap;
 
         }, null, ClassLoader::class);
