@@ -50,6 +50,7 @@ class ComposerStaticInit1325ede364923c305052731ce37643a0
         'M' => 
         array (
             'My\\Abstract\\' => 12,
+            'My\\' => 3,
         ),
         'D' => 
         array (
@@ -155,6 +156,10 @@ class ComposerStaticInit1325ede364923c305052731ce37643a0
             0 => __DIR__ . '/..' . '/friendsofphp/php-cs-fixer/src',
         ),
         'My\\Abstract\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/My',
+        ),
+        'My\\' => 
         array (
             0 => __DIR__ . '/../..' . '/My',
         ),

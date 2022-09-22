@@ -4,7 +4,8 @@
         "psr-4": {
             "Classes\\": "classes/",
             "" : "src/",
-            "My\\Abstract\\" : "My"
+            "My\\Abstract\\" : "My",
+            "My\\" : "My"
         }
     },
     "require-dev": {
