@@ -10,19 +10,19 @@ class Calculator
     public $secondNumber;
     public $result;
 
-    public function firstNumber($numb)
+    public function firstNumber(int $numb): Calculator
     {
         $this->firstNumber = $numb;
         return $this;
     }
 
-    public function secondNumber($numb)
+    public function secondNumber(int $numb): Calculator
     {
         $this->secondNumber = $numb;
         return $this;
     }
 
-    public function operation($className)
+    public function operation(string $className): Calculator
     {
         $object = new $className ($this->firstNumber, $this->secondNumber);
         $this->result = $object->calculate();
@@ -30,7 +30,7 @@ class Calculator
         return $this;
     }
 
-    public function result()
+    public function result(): int
     {
         return $this->result;
     }
@@ -47,6 +47,6 @@ assert(
 assert(
     $calculator->firstNumber(3)
         ->secondNumber(3)
-        ->operation(Mult::class)
+        ->operation(Plus::class)
         ->result() != 4
 );
