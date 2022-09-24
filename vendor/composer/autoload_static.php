@@ -51,6 +51,7 @@ class ComposerStaticInit1325ede364923c305052731ce37643a0
         array (
             'My\\Abstract\\' => 12,
             'My\\' => 3,
+            'Monolog\\' => 8,
         ),
         'D' => 
         array (
@@ -162,6 +163,10 @@ class ComposerStaticInit1325ede364923c305052731ce37643a0
         'My\\' => 
         array (
             0 => __DIR__ . '/../..' . '/My',
+        ),
+        'Monolog\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
         'Doctrine\\Common\\Lexer\\' => 
         array (
