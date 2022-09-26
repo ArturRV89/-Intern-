@@ -8,3 +8,5 @@ require __DIR__ . '/vendor/autoload.php';
 
 $monolog = new TestMonolog();
 $monolog->doSomething();
+
+

@@ -1,5 +1,4 @@
 <?php
-
 declare(strict_types=1);
 
 //Создать файл index.php и директорию classes в которой создать файлы Test1.php и  Test2.php.
