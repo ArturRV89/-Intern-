@@ -1,5 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script src="app.js"></script>
+</body>
+</html>
+
+
 <?php
-declare(strict_types=1);
+//declare(strict_types=1);
 
 //Создать файл index.php и директорию classes в которой создать файлы Test1.php и  Test2.php.
 //В каждом файле разместить одноименный класс с методом do().
