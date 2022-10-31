@@ -17,6 +17,16 @@ require __DIR__ . '/../../vendor/autoload.php';
     );
 */
 
+//class A
+//{
+//    public string $a = 'GG';
+//
+//    public function  __toString()
+//    {
+//        return $this->a;
+//    }
+//}
+
 class A
 {
     use Getter;

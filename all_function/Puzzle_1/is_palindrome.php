@@ -4,7 +4,7 @@
 //(читается одинаково в зад и вперед, например: шалаш) и иначе false.
 //Внимание! Обязательно включите в проверки русские слова "шалаш" и "такси".
 
-function is_palindrome($string)
+function is_palindrome(string $string)
 {
     $string = iconv('utf-8', 'windows-1251', $string);
     return strtolower($string) == strtolower(strrev($string));

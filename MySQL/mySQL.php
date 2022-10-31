@@ -1,12 +1,12 @@
 <?php
 /*
 1. Напишите запрос, чтобы вывести список всех таблиц в базе данных
-   SHOW DATABASES;
+   SHOW TABLES;
 
 2. Напишите запрос, чтобы вывести  все счета за последние 2 месяца
     SELECT *
     FROM invoice
-    WHERE DATE_SUB('21-07-19', INTERVAL 2 MONTH) <= date(created_at);
+    WHERE DATE_SUB(now(), INTERVAL 2 MONTH) <= date(created_at);
 
 3. Напишите запрос, чтобы вывести  даты счетов в формате "June 15 2017"
     SELECT DATE_FORMAT(created_at, '%M.%d.%Y')

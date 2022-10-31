@@ -2,16 +2,18 @@
 
 //Написать функцию only_odd, которая принимает массив [1, 2, 3] и возвращает массив только нечетных [1, 3]
 
-function only_odd ($array)
+function only_odd(array $array): array
 {
-    return [
-        array_filter(
-            $array,
-            fn ($x) => ($x % 2)
-        )
-    ];
+    $length = count($array);
+    for ($i = 0; $i < $length; ++$i)
+        if ($array[$i] % 2 === 0) {
+            array_splice($array, $i, 1);
+            --$length;
+            --$i;
+        }
+    return $array;
 }
+$array = [1, 2, 3];
+$array1 = [1, 3];
 
-$array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-
-assert(only_odd($array));
+assert(only_odd($array) == $array1);

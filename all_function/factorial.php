@@ -1,6 +1,6 @@
 <?php
 
-function factorial($n)
+function factorial(int $n): int
 {
     return ($n <= 1) ? 1 : $n * factorial($n - 1);
 }

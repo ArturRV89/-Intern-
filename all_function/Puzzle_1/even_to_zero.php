@@ -3,7 +3,7 @@
 //Создать функцию even_to_zero(int $number) Которая цифры на четных ПОЗИЦИЯХ занулит.
 //Например, из 12345 получается число 10305. Внимание! Важна позиция цифры, а не значение.
 
-function even_to_zero(int $number)
+function even_to_zero(int $number): int
 {
     return intval(
         implode(
@@ -18,4 +18,4 @@ function even_to_zero(int $number)
     );
 }
 
-assert(12345);
+assert(even_to_zero(12345) == 10305);

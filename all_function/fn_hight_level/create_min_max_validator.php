@@ -1,6 +1,6 @@
 <?php
 
-//Написать функцию create_min_max_validator(int $min, int $max) которая возвращает функцию принимающую один аргумент,
+//Написать функцию create_min_max_validator(int $min, int $max), которая возвращает функцию принимающую один аргумент,
 // функция проверяет входит ли аргумент в диапазон от $min до $max включительно.
 
 function create_min_max_validator(int $min, int $max)
@@ -12,7 +12,9 @@ function create_min_max_validator(int $min, int $max)
 }
 
 $validator = create_min_max_validator(1, 200);
-assert($validator(200));
+$validator(10);
+
+assert(($validator(201)));
 
 
 
