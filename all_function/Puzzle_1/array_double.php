@@ -8,8 +8,8 @@ $array1 = [2, 4, 6];
 
 function array_double(array $array): array
 {
-    return (
-        array_map(fn($array): int => $array * 2, $array, range(0, count($array) - 1))
+    return array_map(
+        fn($array): int => $array * 2, $array, range(0, count($array) - 1)
     );
 }
 
